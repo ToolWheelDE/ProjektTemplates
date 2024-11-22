@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json.schemastore.org/template",
+  "author": "ToolWheel",
+  "classifications": [
+    "ToolWheel",
+    "WinForm",
+    "App"
+  ],
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  },
+  "guids": [
+    "9A19103F-16F7-4668-BE54-9A1E7A4F7556",
+    "FAE04EC0-301F-11D3-BF4B-00C04F79EFBC"
+  ],
+  "identity": "ToolWheel.WinFormApp.Template.Project",
+  "groupIdentity": "ToolWheel.WinFormApp.Template.Group",
+  "generatorVersions": "[1.0.0.0-*)",
+  "precedence": 1,
+  "name": "ToolWheel - WinForm Anwendung",
+  "description": "Projektvorlage zum erstellen von WinForm Anwendung",
+  "shortName": "tw-winform",
+  "sourceName": "ToolWheel.WinFormApp.Template",
+  "preferDefaultName": true,
+  "preferNameDirectory": true,
+  "symbols": {
+    "RootNamespace": {
+      "type": "parameter",
+      "description": "Legt den Basis Namespace fest",
+      "datatype": "text",
+      "defaultValue": "ToolWheel",
+      "replaces": "{RootNamespace}"
+    }
+  }
+}

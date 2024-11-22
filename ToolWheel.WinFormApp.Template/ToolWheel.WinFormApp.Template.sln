@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dokumente", "Dokumente", "{E6FE1D30-001B-447E-BAD0-A8296E54CCF6}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToolWheel.WinFormApp.Template", "src\ToolWheel.WinFormApp.Template.csproj", "{BC2065A5-CE96-403E-8028-D3E09E729AFF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToolWheel.WinFormApp.Template.Test", "test\ToolWheel.WinFormApp.Template.Test\ToolWheel.WinFormApp.Template.Test.csproj", "{D3D31693-E770-481C-BD81-06F22BC900A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ref", "ref", "{436D9F65-5EBF-4B27-9736-B25DD362B63B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F5ACBA2D-DF48-4787-BC80-64AE170BCAED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{9084A9F0-9590-4EC3-9F74-6FE718B6B582}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC2065A5-CE96-403E-8028-D3E09E729AFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC2065A5-CE96-403E-8028-D3E09E729AFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC2065A5-CE96-403E-8028-D3E09E729AFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC2065A5-CE96-403E-8028-D3E09E729AFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3D31693-E770-481C-BD81-06F22BC900A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3D31693-E770-481C-BD81-06F22BC900A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3D31693-E770-481C-BD81-06F22BC900A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3D31693-E770-481C-BD81-06F22BC900A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BC2065A5-CE96-403E-8028-D3E09E729AFF} = {F5ACBA2D-DF48-4787-BC80-64AE170BCAED}
+		{D3D31693-E770-481C-BD81-06F22BC900A9} = {9084A9F0-9590-4EC3-9F74-6FE718B6B582}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C9FBCAA8-054F-4D17-A50A-1E76D39B0C47}
+	EndGlobalSection
+EndGlobal
