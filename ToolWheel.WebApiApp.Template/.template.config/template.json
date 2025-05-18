@@ -25,13 +25,31 @@
   "sourceName": "ToolWheel.WebApiApp.Template",
   "preferDefaultName": true,
   "preferNameDirectory": true,
-  "symbols": {
-    "RootNamespace": {
-      "type": "parameter",
-      "description": "Legt den Basis Namespace fest",
-      "datatype": "text",
-      "defaultValue": "ToolWheel",
-      "replaces": "{RootNamespace}"
+      "symbols": {
+        "Frameworks": {
+            "type": "parameter",
+            "description": "Legt das Framework fest.",
+            "datatype": "choice",
+			"allowMultipleValues": true,
+            "defaultValue": "net80",
+            "replaces": "{Frameworks}",
+            "choices": [
+                {
+                    "choice": "net90",
+                    "description": "Ziel .Net Core 9"
+                },
+                {
+                    "choice": "net80",
+                    "description": "Ziel .Net Core 8"
+                }                                          
+            ]
+        },
+        "RootNamespace": {
+            "type": "parameter",
+            "description": "Legt den Basis Namespace fest",
+            "datatype": "text",
+            "defaultValue": "ToolWheel",
+            "replaces": "{RootNamespace}"
+        }
     }
-  }
 }

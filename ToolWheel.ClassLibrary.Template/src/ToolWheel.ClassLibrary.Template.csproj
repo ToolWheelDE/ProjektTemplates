@@ -1,10 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
 	<!-- Generelle Projekt Konfiguration -->
 	<PropertyGroup>
-		<TargetFramework>net8.0</TargetFramework>
+		<TargetFrameworks>{Frameworks}</TargetFrameworks>
 		<RootNamespace>{RootNamespace}</RootNamespace>
-		<IsPackable>true</IsPackable>
 		<Nullable>enable</Nullable>
+		<LangVersion>default</LangVersion>
+	</PropertyGroup>
+	<PropertyGroup>
+		<IsPackable>false</IsPackable>
 	</PropertyGroup>
 </Project>

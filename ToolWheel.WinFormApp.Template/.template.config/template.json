@@ -24,13 +24,39 @@
   "sourceName": "ToolWheel.WinFormApp.Template",
   "preferDefaultName": true,
   "preferNameDirectory": true,
-  "symbols": {
-    "RootNamespace": {
-      "type": "parameter",
-      "description": "Legt den Basis Namespace fest",
-      "datatype": "text",
-      "defaultValue": "ToolWheel",
-      "replaces": "{RootNamespace}"
+ "symbols": {
+        "Frameworks": {
+            "type": "parameter",
+            "description": "Legt das Framework fest.",
+            "datatype": "choice",
+			"allowMultipleValues": true,
+            "defaultValue": "net8.0-windows",
+            "replaces": "{Frameworks}",
+            "choices": [
+                {
+                    "choice": "net9.0-windows",
+                    "description": "Ziel .Net Core 9"
+                },
+                {
+                    "choice": "net8.0-windows",
+                    "description": "Ziel .Net Core 8"
+                },
+                {
+                    "choice": "net48",
+                    "description": "Ziel Framework 4.8"
+                },    
+                {
+                    "choice": "net45",
+                    "description": "Ziel Framework 4.5"
+                }                                              
+            ]
+        },
+        "RootNamespace": {
+            "type": "parameter",
+            "description": "Legt den Basis Namespace fest",
+            "datatype": "text",
+            "defaultValue": "ToolWheel",
+            "replaces": "{RootNamespace}"
+        }
     }
-  }
 }
