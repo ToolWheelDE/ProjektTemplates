@@ -1,26 +1,50 @@
 #!/bin/bash
 
-# Überprüfe, ob der Pfad zur Solution-Datei angegeben wurde
-if [ -z "$1" ]; then
-  echo "Bitte den Pfad zur Solution-Datei angeben."
+# Funktion zur Anzeige der Hilfe
+show_help() {
+  echo "Verwendung: $0 <PfadZurSlnDatei> [-Path=Suchverzeichnis]"
   exit 1
+}
+
+# Überprüfe, ob mindestens ein Argument übergeben wurde
+if [ $# -lt 1 ]; then
+  show_help
 fi
 
-# Pfad zur Solution-Datei
+# Erstes Argument ist der Pfad zur SLN-Datei
 solution_file="$1"
+shift
 
-# Ausgangsverzeichnis der Suche nach .csproj-Dateien
-base_dir=$(dirname "$solution_file")
+# In absoluten Pfad umwandeln
+solution_file=$(realpath "$solution_file")
 
-# Wechsel zum Ausgangsverzeichnis
-cd "$base_dir" || exit
+# Standard: Verzeichnis der SLN-Datei
+search_path=$(dirname "$solution_file")
 
-# Erstelle die Solution-Datei, falls sie nicht existiert
+# Verarbeite optionale Parameter
+for arg in "$@"; do
+  case $arg in
+    -Path=*)
+      search_path="${arg#*=}"
+      shift
+      ;;
+    *)
+      echo "Unbekannter Parameter: $arg"
+      show_help
+      ;;
+  esac
+done
+
+# Erstelle das Verzeichnis, falls es nicht existiert
+mkdir -p "$(dirname "$solution_file")"
+
+# Erstelle die SLN-Datei, falls sie nicht existiert
 if [ ! -f "$solution_file" ]; then
-  dotnet new sln -n $(basename "$solution_file" .sln)
+  echo "SLN-Datei existiert nicht. Erstelle neue SLN-Datei..."
+  dotnet new sln -n "$(basename "$solution_file" .sln)" -o "$(dirname "$solution_file")"
 fi
 
-# Füge alle .csproj-Dateien zur Solution-Datei hinzu
-find . -name "*.csproj" -exec dotnet sln "$solution_file" add {} \;
+# Füge alle .csproj-Dateien zur SLN-Datei hinzu
+find "$search_path" -name "*.csproj" -exec dotnet sln "$solution_file" add {} \;
 
-echo "Alle .csproj-Dateien wurden zur Solution-Datei $solution_file hinzugefügt."
+echo "Alle .csproj-Dateien im Verzeichnis '$search_path' wurden zur Solution-Datei '$solution_file' hinzugefügt."
