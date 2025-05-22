@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dokumente", "Dokumente", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToolWheel.ClassLibrary.Template", "src\ToolWheel.ClassLibrary.Template.csproj", "{BC2065A5-CE96-403E-8028-D3E09E729AFF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToolWheel.ClassLibrary.Template.Test", "test\ToolWheel.ClassLibrary.Template.Test\ToolWheel.ClassLibrary.Template.Test.csproj", "{D3D31693-E770-481C-BD81-06F22BC900A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToolWheel.ClassLibrary.Template.Test", "test\ToolWheel.ClassLibrary.Template.Test.csproj", "{D3D31693-E770-481C-BD81-06F22BC900A9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ref", "ref", "{08181537-4F43-45E1-8B8E-32D801891719}"
 EndProject

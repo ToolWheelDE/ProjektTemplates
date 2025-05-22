@@ -16,7 +16,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{9084A9F0-9
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToolWheel.WebApiApp.Template", "src\ToolWheel.WebApiApp.Template.csproj", "{D4A96B36-DA89-4C50-AF76-C7924AD16300}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToolWheel.WebApiApp.Template", "test\ToolWheel.WebApiApp.Template.Test\ToolWheel.WebApiApp.Template.Test.csproj", "{4CB83BF1-474C-4C4E-A380-B6DF72E59AB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToolWheel.WebApiApp.Template", "test\ToolWheel.WebApiApp.Template.Test.csproj", "{4CB83BF1-474C-4C4E-A380-B6DF72E59AB8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

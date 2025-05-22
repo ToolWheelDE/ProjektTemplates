@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dokumente", "Dokumente", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToolWheel.WinFormApp.Template", "src\ToolWheel.WinFormApp.Template.csproj", "{BC2065A5-CE96-403E-8028-D3E09E729AFF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToolWheel.WinFormApp.Template.Test", "test\ToolWheel.WinFormApp.Template.Test\ToolWheel.WinFormApp.Template.Test.csproj", "{D3D31693-E770-481C-BD81-06F22BC900A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToolWheel.WinFormApp.Template.Test", "test\ToolWheel.WinFormApp.Template.Test.csproj", "{D3D31693-E770-481C-BD81-06F22BC900A9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ref", "ref", "{436D9F65-5EBF-4B27-9736-B25DD362B63B}"
 EndProject
